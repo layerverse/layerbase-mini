@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f3fa;
+  color: #373344;
+}
+
+.hello {
+  padding: 60px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid #b8b3cc;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
