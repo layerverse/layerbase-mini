@@ -4,10 +4,46 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>layerbase-mini</title>
+    <meta name="theme-color" content="#f7f6fa" />
+    <title>Layerbase Mini</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <aside class="sidebar">
+        <div class="brand">Layerbase</div>
+        
+        <nav class="navigation">
+          <a href="#" class="nav-item active">All Notes</a>
+          <a href="#" class="nav-item">Favorites</a>
+          <a href="#" class="nav-item">Trash</a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <h1>All Notes</h1>
+          <button class="new-note-button">+ New Note</button>
+        </header>
+
+        <section class="note-grid">
+          <article class="note-card">
+            <h2>First Note</h2>
+            <p>This is the content of the first note.</p>
+          </article>
+
+          <article class="note-card">
+            <h2>Creative Ideas</h2>
+            <p>This is the content of the second note.</p>
+          </article>
+
+          <article class="note-card">
+            <h2>Daily Notes</h2>
+            <p>This is the content of the third note.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
