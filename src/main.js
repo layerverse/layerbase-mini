@@ -1,15 +1,15 @@
 import './style.css';
 
 // Get HTML elements
-const header = document.querySelector('header');
+const header = document.querySelector('.header');
 const noteGrid = document.querySelector('.note-grid');
 const noteEditor = document.querySelector('.note-editor');
 
-const editorTitle = document.getElementById('editor-title');
-const editorContent = document.getElementById('editor-content');
+const editorTitle = document.querySelector('.editor-title');
+const editorContent = document.querySelector('.editor-content');
 
-const backButton = document.getElementById('back-button');
-const newNoteButton = document.getElementById('new-note-button');
+const backButton = document.querySelector('.back-button');
+const newNoteButton = document.querySelector('.new-note-button');
 
 // Open editor
 function openEditor(title = '', content = '') {
