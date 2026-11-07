@@ -124,3 +124,76 @@ body {
   font-size: 13px;
   line-height: 1.6;
 }
+
+/* Note Editor */
+
+.note-editor {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 84px);
+}
+
+/* Hidden state */
+
+.note-editor[hidden] {
+  display: none;
+}
+
+/* Editor Header */
+
+.editor-header {
+  margin-bottom: 32px;
+}
+
+.back-button {
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+  color: #777184;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #65558d;
+}
+
+/* Editor Title */
+
+.editor-title {
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 8px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #373344;
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.editor-title::placeholder {
+  color: #b0acba;
+}
+
+/* Editor Content */
+
+.editor-content {
+  width: 100%;
+  min-height: 360px;
+  flex: 1;
+  padding: 8px 0;
+  border: none;
+  outline: none;
+  resize: vertical;
+  background: transparent;
+  color: #373344;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.editor-content::placeholder {
+  color: #aaa5b5;
+}
