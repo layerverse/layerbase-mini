@@ -197,3 +197,9 @@ body {
 .editor-content::placeholder {
   color: #aaa5b5;
 }
+
+/* Hide elements with the hidden attribute */
+
+[hidden] {
+  display: none;
+}
