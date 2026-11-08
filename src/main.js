@@ -36,6 +36,8 @@ const noteCards = document.querySelectorAll('.note-card');
 
 noteCards.forEach(card => {
     card.addEventListener('click', () => {
+        currentCard = card;
+
         const title = card.querySelector('h2').textContent;
         const content = card.querySelector('p').textContent;
 
