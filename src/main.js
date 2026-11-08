@@ -26,9 +26,16 @@ function openEditor(title = '', content = '') {
 
 // Close editor
 function closeEditor() {
+    if (currentCard) {
+        currentCard.querySelector('h2').textContent = editorTitle.value;
+        currentCard.querySelector('p').textContent = editorContent.value;
+    }
+
     header.hidden = false;
     noteGrid.hidden = false;
     noteEditor.hidden = true;
+
+    currentCard = null;
 }
 
 // Open existing note
