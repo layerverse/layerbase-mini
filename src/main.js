@@ -11,6 +11,9 @@ const editorContent = document.querySelector('.editor-content');
 const backButton = document.querySelector('.back-button');
 const newNoteButton = document.querySelector('.new-note-button');
 
+// Current note being edited
+let currentCard = null;
+
 // Open editor
 function openEditor(title = '', content = '') {
     editorTitle.value = title;
